@@ -7,6 +7,7 @@ namespace RomanCalculator.Test
         [TestCase("I", "II", "III")]
         [TestCase("II", "II", "IV")]
         [TestCase("V", "V", "X")]
+        [TestCase("I", "III", "IV")]
         public void AddTwoRomanStringsShouldReturnSumAsRomanString(String a, String b, String expected)
         {
             Assert.That(RomanCalculator.Add(a, b), Is.EqualTo(expected));
